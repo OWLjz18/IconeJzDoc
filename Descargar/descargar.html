@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./../css/normalize.css">
+  <title>Descargar</title>
+  <link rel="stylesheet" href="./../IconeJz/src/iconejz.css"> 
+  <script src="./../IconeJz/src/iconejz.js"></script>
+  <link rel="stylesheet" href="./../css/style.css">
+  <link rel="stylesheet" href="./descargar.css">
+</head>
+<body>
+  
+  <div class="contenedor">
+    
+    <header class="header">
+      <h1 class="header__titulo">IconeJz</h1>
+      
+      <jz-m class="header__icono" f="transparent" s="35px"></jz-m>
+    </header>
+    
+    <nav class="nav">
+      <ul class="nav__lista">
+        <li class="nav__li"><a href="./.././" class="nav__enlace">Inicio</a></li>
+        <li class="nav__li"><a href="https://www.paypal.me/IconeJz" class="nav__enlace">Donar</a></li>
+        <li class="nav__li"><a href="./../Documentacion/documentacion.html" class="nav__enlace">Documentación</a></li>
+      </ul>
+      
+      <ul class="redes">
+        <li class="redes__red">
+          <a class="redes__enlace" href="https://instagram.com/owl.jz18"> <jz-ig class="redes__icono"></jz-ig> </a>
+        </li>
+        <li class="redes__red">
+          <a class="redes__enlace" href="https://github.com/OWLjz18"> <jz-github class="redes__icono"></jz-github> </a>
+        </li>
+        <li class="redes__red">
+          <a class="redes__enlace" href="mailto:owl.jz18@gmail.com"> <jz-email class="redes__icono"></jz-email> </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <main class="main">
+      
+      <section class="section">
+        
+        <h2 class="section__titulo">¡Bienvenidos al apartado de descargas!</h2>
+        
+        <p class="section__texto">De momento hay dos maneras de descargarme, usando <a href="https://git-scm.com/" class="main__enlace">git</a> o <a href="https://cli.github.com/" class="main__enlace">Github CLI</a> (gh), próximamente también estaré disponible a través de npm.</p>
+        
+        <p class="section__texto">Al descargarme, este será el contenido de mi carpeta:</p>
+        
+        <div class="ejemploIconejz__contenedor"></div>
+        
+        <ul class="section__lista">
+          <li class="section__li"><span class="italic bold">iconejz.css</span> => Es el archivo CSS dónde se encuentra la magia con la que se dibuja cada ícono :D</li>
+          <li class="section__li"><span class="italic bold">iconejz.js</span> => Es el archivo Javascript que se encarga de toda la parte estructural y funcional.</li>
+          <li class="section__li"><span class="italic bold">iconejz.txt</span> => Es un archivo de texto plano con el que podrán tener a la mano una lista completa de todos los iconos disponibles.</li>
+          <li class="section__li"><span class="italic bold">LICENSE.md</span> => Es un archivo de Markdown que contiene la licencia del proyecto.</li>
+          <li class="section__li"><span class="italic bold">README.md</span> => Es un archivo Markdown que sirve para la presentación en Github.</li>
+        </ul>
+        
+      </section>
+      
+      <p class="section__texto">Para que el repositorio sea clonado con exito deben tener la opción de su elección instalado en su sistema operativo, de no tenerlo por favor diríjanse a su sitio web oficial e instalenlo. Una vez instalado pueden proseguir con el proceso a continuación.</p>
+      
+      <p class="section__texto">Diríjanse a su terminal, en ella navegen hasta la carpeta de su proyecto y ejecuten el comando del programa que hayan escogido usar:</p>
+      
+      <section class="section">
+        <h2 class="section__titulo">Usando Git</h2>
+        
+        <div class="ejemploDescargar">
+          <p class="ejemploDescargar__texto">$ git clone 'https://github.com/OWLjz18/IconeJz.git'</p>
+          <jz-copy class="ejemploDescargar__icono ejemploDescargar__icono--1" b="2px" s="30px"></jz-copy>
+          <input type="text" class="ejemploDescargar__input" readonly>
+        </div>
+        
+     </section>
+      
+      <section class="section">
+        <h2 class="section__titulo">Usando Github CLi</h2>
+        
+        <div class="ejemploDescargar">
+          <p class="ejemploDescargar__texto">$ gh repo clone 'OWLjz18/IconeJz'</p>
+          <jz-copy class="ejemploDescargar__icono" b="2px" s="30px"></jz-copy>
+          <input type="text" class="ejemploDescargar__input" readonly>
+        </div>
+      </section>
+     
+    </main>
+    
+  </div>
+  
+  <script src="./../js/menu.js"></script>
+  <script src="./ejemploIconejz/ejemploIconejz.js"></script>
+  <script src="./copiarEjemplosDescargar.js" type="module"></script>
+</body>
+</html>

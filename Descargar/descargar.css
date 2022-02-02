@@ -1,0 +1,51 @@
+@import url('./../js/alertMensaje/alertMensaje.css');
+@import url('./ejemploIconejz/ejemploIconejz.css');
+
+.ejemploDescargar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.ejemploDescargar__texto {
+  color: #E3E3E3;
+  margin: 0;
+  padding: 8px 10px;
+  display: inline-block;
+  background-color: #000;
+  border-radius: 2px;
+  position: relative;
+  text-indent: 0;
+  font-family: monospace;
+}
+
+.ejemploDescargar__icono {
+  margin-left: 5px;
+}
+
+.ejemploDescargar__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  user-select: none;
+}
+
+@media screen and (max-width: 500px) {
+ 
+  .ejemploDescargar__texto {
+    font-size: 10.6px;
+  }
+  
+}
+
+@media screen and (max-width: 416px) {
+ 
+  .ejemploDescargar__icono--1 {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  
+}

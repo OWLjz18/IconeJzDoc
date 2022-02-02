@@ -1,0 +1,38 @@
+:root {
+  --colorMensaje: #E3E3E3;
+  --tiempoTransicion: 0.5s;
+}
+
+.alertMensaje {
+  color: var(--colorMensaje);
+  margin: 0;
+  padding: 5px 12px 8px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  position: fixed;
+  bottom: 2.5%;
+  z-index: 6;
+  font-style: italic;
+  border-radius: 5px;
+  background-color: #000;
+  transform: scale(0);
+}
+
+.alertMensaje.on,
+.alertMensaje.off {
+  transition: transform var(--tiempoTransicion) linear;
+}
+
+.alertMensaje.on {
+  transform: scale(1);
+}
+
+.alertMensaje.off {
+  transform: scale(0);
+}
+
+.alertMensaje__texto {
+  transform: translateY(-2.5px);
+}

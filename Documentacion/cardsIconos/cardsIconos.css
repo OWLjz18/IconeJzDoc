@@ -1,0 +1,62 @@
+.card {
+  width: 90%;
+  margin-bottom: 5%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #AAA;
+  position: relative;
+}
+
+.card__titulo {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+.card__contenido {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.card__subtitulo {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.card__codigo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card__iconoCopiar {
+  --color-iconejz: #FFF;
+  --padding-iconejz: 2px;
+  --border-radius-iconejz: 50%;
+  --background-iconejz: rgba(0, 0, 0, 0.1);
+  margin-left: 5px;
+  transform: translateY(-2.5px);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transition: background-color 0.25s linear; 
+}
+
+.card__iconoCopiar:hover {
+  --color-iconejz: rgba(0, 0, 0, 0.5);
+  --background-iconejz: rgba(255, 255, 255, 0.5);
+}
+
+.card__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  user-select: none;
+}
