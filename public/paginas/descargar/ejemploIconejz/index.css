@@ -1,0 +1,131 @@
+.jz-folder {
+  width: 2.4rem;
+  height: 1.65rem;
+  margin: 0.5rem;
+  margin-left: 0.25rem;
+  position: relative;
+  border-radius: 0.15rem;
+  border-top-left-radius: 0;
+  background-color: #FFA900;
+}
+
+ .jz-folder::after {
+  content: "";
+  width: 45%;
+  height: 20%;
+  position: absolute;
+  top: -18%;
+  border-radius: 0.15rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #FFA900;
+}
+
+.jz-json {
+  width: 2.5rem;
+  height: 2.25rem;
+  margin: 0.5rem;
+  position: relative;
+}
+
+.jz-json::after {
+  content: "{}";
+  color: #00FF25;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: monospace;
+}
+
+.ejemploIconejz__contenedor {  
+  --background-iconejz: #111;
+  
+  width: 27rem;
+  padding: 0.8rem;
+  display: inline-block;
+  border-radius: 0.28rem;
+  background-color: #111;
+  transition: height 0.25s linear;
+}
+
+.ejemploIconejz__carpeta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ejemploIconejz__carpeta--2 {
+  margin-top: 0.6rem;
+  transition: opacity 0.35s linear;
+}
+
+.ejemploIconejz__carpeta--2,
+.ejemploIconejz__contenido {
+  margin-left: 1.8rem;
+}
+
+.ejemploIconejz__texto {
+  color: #595959;
+  margin: 0;
+}
+
+.ejemploIconejz__archivo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ejemploIconejz__archivo--contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ejemploIconejz__contenido,
+.ejemploIconejz__contenido--2 {
+  transition: opacity 0.25s linear;
+}
+
+.ejemploIconejz__contenido--2 {
+  margin-left: 3.6rem;
+}
+
+.ejemploIconejz__iconoFlecha {
+  --size-iconejz: 2rem;
+  --color-iconejz: #525252;
+  transition: transform 0.25s linear;
+}
+
+.ejemploIconejz__iconoArchivo {
+  --size-iconejz: 3.5rem;
+}
+
+.ejemploIconejz__iconoTVP {
+  --size-iconejz: 1.85rem;
+  --color-iconejz: #525252;
+}
+
+.ejemploIconejz__carpeta--contenidoTransparente .jz-folder,
+.ejemploIconejz__carpeta2--contenidoTransparente .jz-folder,
+.ejemploIconejz__carpeta--contenidoTransparente .jz-folder::after,
+.ejemploIconejz__carpeta2--contenidoTransparente .jz-folder::after {
+  background-color: #00FFDE;
+}
+
+.ejemploIconejz__carpeta--contenidoTransparente .ejemploIconejz__iconoFlecha,
+.ejemploIconejz__carpeta2--contenidoTransparente .ejemploIconejz__iconoFlecha {
+  transform: rotate(90deg);
+}
+
+.ejemploIconejz__carpeta--contenidoTransparente ~ .ejemploIconejz__carpeta--2,
+.ejemploIconejz__carpeta--contenidoTransparente ~ .ejemploIconejz__contenido,
+.ejemploIconejz__carpeta--contenidoTransparente ~ .ejemploIconejz__contenido--2,
+.ejemploIconejz__carpeta2--contenidoTransparente ~ .ejemploIconejz__contenido--2 {
+  opacity: 0;
+}
+
+.ejemploIconejz__carpeta--cerrada ~ .ejemploIconejz__carpeta--2,
+.ejemploIconejz__carpeta--cerrada ~ .ejemploIconejz__contenido,
+.ejemploIconejz__carpeta--cerrada ~ .ejemploIconejz__contenido--2, 
+.ejemploIconejz__carpeta2--cerrada ~ .ejemploIconejz__contenido--2 {
+  display: none;
+} 

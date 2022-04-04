@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="./../../css/normalize.css">
+  <!-- IconeJz -->
+  <link rel="stylesheet" href="./../../IconeJz/src/iconejz.css">  
+  <script src="./../../IconeJz/src/iconejz.js" async></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="./../../css/base.css">
+  <link rel="stylesheet" href="./ejemplos/index.css">
+  <link rel="stylesheet" href="./componentes/card-icono/index.css">
+  <link rel="stylesheet" href="./documentacion.css">
+  <!-- Scripts -->
+  <script src="./../../js/menu.js" defer></script>
+  <script src="./ejemplos/index.js" type="module"></script>
+  <script src="./componentes/card-icono/index.js" type="module" async></script>
+  <script src="./agregar-cards/index.js" type="module" async></script>
+  <!-- SEO -->
+  <meta name="author" content="Jose Zambrano (OWLjz18)">
+  <meta name="description" content="IconeJz es un sistema de iconos basado en, HTML CSS y Javascript para el desarrollo web, que le permite estilizar los iconos mediante atributos e incluso, cambiar el contenido de un icono por otro.">
+</head>
+<body>
+
+  <div class="contenedor">
+    
+    <header class="header">
+      <h1 class="header__titulo">IconeJz</h1>
+      <jz-m class="header__icono" f="transparent" s="35px"></jz-m>
+    </header>
+    
+    <nav class="nav">
+      <ul class="nav__lista">
+        <li class="nav__li"><a href="./../../../" class="nav__enlace">Inicio</a></li>
+        <li class="nav__li"><a href="https://www.paypal.me/IconeJz" class="nav__enlace">Donar</a></li>
+        <li class="nav__li"><a href="./../descargar/descargar.html" class="nav__enlace">Descargar</a></li>
+      </ul>
+      
+      <ul class="redes">
+        <li class="redes__red">
+          <a class="redes__enlace" href="https://instagram.com/owljz18"> <jz-ig class="redes__icono"></jz-ig> </a>
+        </li>
+        <li class="redes__red">
+          <a class="redes__enlace" href="https://github.com/OWLjz18"> <jz-github class="redes__icono"></jz-github> </a>
+        </li>
+        <li class="redes__red">
+          <a class="redes__enlace" href="mailto:owl.jz18@gmail.com"> <jz-email class="redes__icono"></jz-email> </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <main class="main">
+      
+      <!--  Atajo a los íconos  -->
+      <p class="textoAtajo italic"><span class="bold">NOTA:</span> Si ya sabes trabajar con nosotros, puedes ir directamente a los <span class="bold">íconos</span> haciendo click <a href="#seccionIconos" class="main__enlace">aquí</a>.</p>
+      
+      <!-- Agradecimientos -->
+      <section class="section">
+        <h2 class="section__titulo">&#128140; Agradecimientos</h2>
+        
+        <p class="section__texto">Primeramente quiero darle las gracias a mi familia por apoyarme y motivarme al decidir estudiar esta carrera. &#128156;</p>
+        
+        <p class="section__texto">También quiero agradecer a <span class="italic bold">"FR"</span> por el gran apoyo y motivación que me dió en los momentos en que pensaba que por no tener PC no podria continuar, además de contestar las más de 20 preguntas que le hacía todos los días jajaja &#128517;. A <span class="italic bold">"Leandro"</span> por recomendarme en una publicación de Facebook el editor de texto que sigo usando al día de hoy para programar en el móvil y luego, con el paso del tiempo, apoyarme con este proyecto desde el primer momento en que le comenté la idea que tenía para crear este sistema de íconos &#127776;. Y por último quiero agradecerle a <span class="italic bold">"Jaspe"</span> mi querido profesor de inglés por ayudarme con varias de las traducciones que fueron necesarias para los nombres de los íconos. &#129299;</p>
+        
+        <p class="section__texto italic"><span class="bold">Atte: </span>OWLjz18.&#129417;</p>
+      </section>
+      
+      <!-- ¿Qué soy? -->
+      <section class="section">
+        <h2 class="section__titulo">&#127776; ¿Qué soy?</h2>
+        
+        <p class="section__texto">Soy un sistema de íconos basado puramente en <span class="italic bold">HTML, CSS y Javascript</span>. Cuento con la funcionalidad poder darle estilos a cada uno de mis íconos mediante atributos, al igual que cambiar el contenido de un ícono por otro, más adelante veremos en detalle cada uno de los atributos disponibles para dichas acciones. Por último, la mayoría de mis íconos son adaptables a una gran cantidad de tamaños, pudiendo llegar como mínimo a los <span class="italic">25px</span> y como máximo a los <span class="italic">250px</span> (o más).</p>
+      </section>
+      
+      <!-- ¿Cómo usarme? -->
+      <section class="section">
+        <h2 class="section__titulo">&#128270; ¿Cómo usarme?</h2>
+        
+        <p class="section__texto">Primeramente deben descargarme y posicionarme en la carpeta de su proyecto, en caso de que aún no me hayan descargado pueden ir al apartado de <a href="./../descargar/descargar.html" class="main__enlace">descargar</a> y les explico paso por paso cómo realizar la descarga, además del contenido de mi carpeta.</p>
+        
+        <p class="section__texto">Luego de tenerme posicionado en su proyecto, deberán conectar una hoja de estilos y un script al archivo <span class="italic">HTML</span> dónde vayan a implementarme. Así se verían la hoja de estilos y el script suponiendo que me encuentro en la raíz de su proyecto al igual que el archivo <span class="italic">HTML</span>:</p>
+        
+        <!-- Ejemplo de HTML #1 -->
+        <div class="ejemplo__contenedor">
+          <div class="ejemplo-HTML1"></div>
+          <jz-copy class="ejemplo__iconoCopy"></jz-copy>
+          <input class="ejemplo__input" type="text">
+        </div>
+        <!-- Ejemplo de HTML #2 -->
+        <div class="ejemplo__contenedor">
+          <div class="ejemplo-HTML2"></div>
+          <jz-copy class="ejemplo__iconoCopy"></jz-copy>
+          <input class="ejemplo__input" type="text">
+        </div>
+        
+        <p class="section__texto"><span class="italic bold">Nota:</span> El script puede ser conectado en el head si así lo desea, ya que este no necesita esperar a que se cargue por completo el <span class="italic">DOM</span>.</p>
+        
+        <p class="section__texto">Ahora que me tienen enlazado a su archivo <span class="italic">HTML</span>, solo deben escribir la etiqueta del ícono que deseen usar, para esto se pueden dirigir a la sección <a href="#seccionIconos" class="main__enlace">íconos</a> dónde van copiar y pegar el código del ícono que elijan usar o también podrían ver el archivo <span class="italic bold">"iconejz.txt"</span> el cuál posee una lista completa de todos los íconos disponibles. Veamos un ejemplo con el ícono de un menú hamburguesa:</p>
+        
+        <!-- Ejemplo de HTML #3 -->
+        <div class="ejemploIconos__contenedor">
+          <p class="ejemploIconos__texto italic bold">Código:</p>
+          <p class="ejemploIconos__texto italic bold">Resultado:</p>
+          
+          <div class="ejemplo__contenedor">
+            <div class="ejemplo-HTML3"></div>
+            <jz-copy class="ejemplo__iconoCopy"></jz-copy>
+            <input class="ejemplo__input" type="text">
+          </div>
+          <jz-m></jz-m>
+        </div>
+      </section>
+      
+      <!-- Dandole estilos a mis iconos -->
+      <section class="section">
+        <h2 class="section__titulo">&#128171; Dandole estilos a mis iconos</h2>
+        
+        <p class="section__texto">Inicialmente todos los íconos vienen con fondo negro y su contenido es de color blanco, pero podemos cambiarle los estilos haciendo uso de los siguientes atributos, e incluso con uno de ellos podemos cambiar un ícono por otro:</p>
+        
+        <ul class="section__lista">
+          <li class="section__li"><span class="bold">f</span> => Establece el color de fondo.</li>
+          <li class="section__li"><span class="bold">c</span> => Establece el color para el contenido del ícono.</li>
+          <li class="section__li"><span class="bold">s</span> => Establece el tamaño del ícono.</li>
+          <li class="section__li"><span class="bold">b</span> => Establece el border-radius.</li>
+          <li class="section__li"><span class="bold">t</span> => Este atributo permite establecer un color de fondo para los íconos que no pueden ser totalmente transparentes. Por favor diríjase a la sección de <a href="#seccionAdvertencias" class="main__enlace">Advertencias</a> para saber más al respecto.</li>
+          <li class="section__li"><span class="bold">m</span> => Establece el margin.</li>
+          <li class="section__li"><span class="bold">p</span> => Establece el padding.</li>
+          <li class="section__li"><span class="bold">o</span> => Establece la opacidad total del ícono.</li>
+          <li class="section__li section__li--especial"><span class="bold">change-iconejz</span> => Permite cambiar el contenido de un ícono por otro.</li>
+        </ul>
+        
+        <p class="section__texto">Si gustan cambiarle los estilos predeterminados a todos los iconos de un solo golpe, podrían dirigirse al archivo <span class="italic bold">"iconejz.css"</span> y entre las primeras líneas, encontrarán las variables de dichos estilos por lo que pueden cambiar sus valores asignándole los que ustedes deseen que tengan.</p>
+        
+        <p class="section__texto">Un ejemplo podría ser que los iconos tuviesen inicialmente un color de contenido verde en vez de blanco. Para lograr esto sería tan sencillo cómo modificar la variable <span class="bold">"--color-iconejz"</span> dándole el valor de <span class="italic bold">"#29FFAA"</span> se vería de la siguiente forma:</p>
+        
+        <!-- Ejemplo de CSS #1 -->
+        <div class="ejemplo__contenedor">
+          <div class="ejemplo-CSS1"></div>
+          <jz-copy class="ejemplo__iconoCopy"></jz-copy>
+          <input class="ejemplo__input" type="text">
+        </div>
+        
+        <p class="section__texto">Ahora pasemos a ver algunos ejemplos aplicando los atributos descritos con anterioridad:</p>
+        
+        <!-- Ejemplo de HTML #4 -->
+        <div class="ejemploIconos__contenedor">
+          <p class="ejemploIconos__texto italic bold">Código:</p>
+          <p class="ejemploIconos__texto italic bold">Resultado:</p>
+          
+          <div class="ejemplo__contenedor">
+            <div class="ejemplo-HTML4"></div>
+            <jz-copy class="ejemplo__iconoCopy"></jz-copy>
+            <input class="ejemplo__input" type="text">
+          </div>
+          <jz-m f="transparent" c="#9500FF"></jz-m>
+        </div>
+        
+        <!-- Ejemplo de HTML #5 -->
+        <div class="ejemploIconos__contenedor">
+          <p class="ejemploIconos__texto italic bold">Código:</p>
+          <p class="ejemploIconos__texto italic bold">Resultado:</p>
+          
+          <div class="ejemplo__contenedor">
+            <div class="ejemplo-HTML5"></div>
+            <jz-copy class="ejemplo__iconoCopy"></jz-copy>
+            <input class="ejemplo__input" type="text">
+          </div>
+          <jz-x f="transparent" c="red" b="50%" o="0.3"></jz-x>
+        </div>
+        
+        <p class="section__texto">Veamos otro ejemplo, pero esta vez haciendo uso del atributo <span class="italic bold">change-iconejz</span> podríamos estar desarrollando un reproductor de música y tener el ícono de <span class="italic bold">"jz-play"</span> con el cuál luego de darle un click comenzaría a reproducirse la canción, pero lo más normal sería que al mismo tiempo que le hacemos click este cambiara por el ícono de <span class="italic bold">"jz-pause"</span>, para que si lo vuelven a presionar, este pause la canción y se vuelva a convertir en el ícono de <span class="italic bold">"jz-play"</span> y así sucesivamente (lo común en un reproductor de música), observemos un ejemplo de como podríamos hacer que este ícono cambie por otro y viceversa:</p>
+        
+        <p class="section__texto">Este será nuestro ícono, al cuál le agregamos una clase (o un <span class="bold">id</span>, como ustedes gusten) para seleccionarlo desde Javascript:</p>
+        
+        <!-- Ejemplo de HTML #6 -->
+        <div class="ejemploIconos__contenedor">
+          <p class="ejemploIconos__texto italic bold">Código:</p>
+          <p class="ejemploIconos__texto italic bold">Resultado:</p>
+          
+          <div class="ejemplo__contenedor">
+            <div class="ejemplo-HTML6"></div>
+            <jz-copy class="ejemplo__iconoCopy"></jz-copy>
+            <input class="ejemplo__input" type="text">
+          </div>
+          <jz-play c="gold" s="40px"></jz-play>
+        </div>
+        
+        <p class="section__texto">Este va a ser nuetro código de Javascript:</p>
+        
+        <!-- Ejemplo JS #1 -->
+        <div class="ejemplo__contenedor">
+          <pre class="ejemplo-JS1"></pre>
+          <jz-copy class="ejemplo__iconoCopy"></jz-copy>
+          <input class="ejemplo__input ejemplo__input--js" type="text">
+        </div>
+        
+        <p class="section__texto">Y este sería el resultado final (pueden hacerle click):</p>
+        <jz-play class="ejemplo__iconoPlay" c="gold" s="40px"></jz-play>
+        
+        <p class="section__texto">Ahora expliquemos detalladamente lo que sucede aquí.</p>
+        
+        <ul class="section__lista">
+          <li class="section__li">Seleccionamos el ícono por su clase y lo almacenamos en una constante. <span class="bold">[1]</span></li>
+          <li class="section__li">Hacemos uso del método toggle del objeto classList, para agregarle al icono la clase <span class="italic bold">"reproduciendo"</span> en caso de que este no la tenga y si la tiene, la eliminará. Esto nos ayudará a saber cuándo el usuario haya hecho click para reproducir la canción. <span class="bold">[2]</span></li>
+          <li class="section__li">Por último validamos si el ícono tiene o no la clase <span class="italic bold">"reproduciendo"</span>, si la tiene se agregará el atributo <span class="italic bold">"change-iconejz"</span> con el valor de <span class="italic bold">"jz-pause"</span>, por lo que el ícono pasará de <span class="italic bold">"jz-play"</span> a <span class="italic bold">"jz-pause"</span>. En caso de que no tenga la clase, eliminará el atributo <span class="italic bold">"change-iconejz"</span>, por lo que el ícono volverá a ser <span class="italic bold">"jz-play"</span>. <span class="bold">[3]</span></li>
+        </ul>
+      </section>
+      
+      <!-- Advertencias. -->
+      <section class="section" id="seccionAdvertencias">
+        <h2 class="section__titulo">&#128064; Advertencias</h2>
+        
+        <p class="section__texto">Hay ciertos íconos que no pueden ser completamente transparentes, ya que se dejan de ver cómo esperamos, la razón de esto es que algunos íconos como <span class="italic bold">"jz-wng"</span> tiene elementos dentro que dan la impresión de ser huecos y visualizar el fondo del ícono, entonces si a estos le establecemos un <span class="italic bold">f="transparent"</span>, notaremos qué ya el contenido de adentro, dejará de verse.</p>
+        
+        <p class="section__texto">Para solucionar esto, me crearon el atributo <span class="italic bold">"t"</span> al cuál le pueden asignar un valor que será el color del contenido que anteriormente no se veía, observemos un ejemplo de esto, ya que es más sencillo de ver qué de leer:</p>
+        
+        <!-- Ejemplo de HTML #7 -->
+        <div class="ejemploIconos__contenedor">
+          <p class="ejemploIconos__texto italic bold">Código:</p>
+          <p class="ejemploIconos__texto italic bold">Resultado:</p>
+          
+          <div class="ejemplo__contenedor">
+            <div class="ejemplo-HTML7"></div>
+            <jz-copy class="ejemplo__iconoCopy"></jz-copy>
+            <input class="ejemplo__input" type="text">
+          </div>
+          <div class="ejemplo__iconoWng-contenedor">
+            <jz-wng f="transparent" c="#9500FF"></jz-wng>
+          </div>
+        </div>
+        
+        <!-- Ejemplo de HTML #8 -->
+        <div class="ejemploIconos__contenedor">
+          <p class="ejemploIconos__texto italic bold">Código:</p>
+          <p class="ejemploIconos__texto italic bold">Resultado:</p>
+          
+          <div class="ejemplo__contenedor">
+            <div class="ejemplo-HTML8"></div>
+            <jz-copy class="ejemplo__iconoCopy"></jz-copy>
+            <input class="ejemplo__input" type="text">
+          </div>
+          <jz-wng f="transparent" t="#CACACA" c="#9500FF"></jz-wng>
+        </div>
+        
+        <p class="section__lista">Acá les dejo una lista de todos los íconos que necesitan este atributo:</p>
+        <ul class="section__lista section__lista--advertencias"></ul>
+       
+        <p class="section__texto">Les recomiendo que por favor estilicen los íconos usando los atributos que me fueron creados, ya que estos permiten a íconos como <span class="italic bold">"jz-ig"</span> y <span class="italic bold">"jz-mg"</span>, verse bien sin importar el tamaño que le sea asignado.</p>
+        
+        <p class="section__texto">Ahora, algo que deben tener en cuenta es que mis atributos tienen mayor especificidad que las clases, por lo que asignarle un atributo como <span class="italic bold">"f"</span> y luego en <span class="italic bold">CSS</span> cambiar el valor de la variable <span class="italic bold">--background-iconejz</span> no tendrá efecto alguno, a menos de que le asignen la regla <span class="italic bold">!import</span>.</p>
+      </section>
+      
+      <!-- Notas adicionales -->
+      <section class="section">
+        <h2 class="section__titulo">&#127873; Información Adicional</h2>
+        
+        <p class="section__texto">Si desean realizar un pedido de algún ícono en particular para poder ser usado con mi sistema, pueden hacerlo escribiendole a mi creador mediante su cuenta de Instagram <a href="https://instagram.com/owljz18" class="main__enlace">@owljz18</a>.</p>
+        
+        <p class="section__texto">También pueden regalarnos una &#127775; en mí <a href="https://github.com/OWLjz18/IconeJz" class="main__enlace">repositorio</a> de Github en caso de que te guste el proyecto y comentarle a otros sobre mí sería de mucha ayuda para llegar a más personas. &#128101;</p>
+        
+        <p class="section__texto">Y si desea realizar una donación para aportar monetariamente su granito de arena, puede hacerlo vía Paypal pulsando <a href="https://www.paypal.me/Iconejz" class="main__enlace">aquí</a>. &#128176;</p>
+      </section>
+      
+      <!--  Iconos  -->
+      <section class="section section--iconos" id="seccionIconos">
+        <h2 class="section__titulo">&#128204; Iconos</h2>
+        
+        <card-icono titulo="Flecha hacia arriba" tag-icono="jz-a-u"></card-icono>
+        <card-icono titulo="Flecha hacia la derecha" tag-icono="jz-a-rg"></card-icono>
+        <card-icono titulo="Flecha hacia abajo" tag-icono="jz-a-d"></card-icono>
+        <card-icono titulo="Flecha hacia la izquierda" tag-icono="jz-a-lf"></card-icono>
+        <card-icono titulo="Youtube" tag-icono="jz-yt"></card-icono>
+        <card-icono titulo="Instagram" tag-icono="jz-ig"></card-icono>
+        <card-icono titulo="Menú hamburguesa" tag-icono="jz-m"></card-icono>
+        <card-icono titulo="Lupa" tag-icono="jz-mg"></card-icono>
+        <card-icono titulo="Check" tag-icono="jz-ck"></card-icono>
+        <card-icono titulo="Equis (x)" tag-icono="jz-x"></card-icono>
+        <card-icono titulo="Tres puntos verticales" tag-icono="jz-tvp"></card-icono>
+        <card-icono titulo="Tres puntos horizontales" tag-icono="jz-thp"></card-icono>
+        <card-icono titulo="Candado" tag-icono="jz-plk"></card-icono>
+        <card-icono titulo="Candado abierto" tag-icono="jz-oplk"></card-icono>
+        <card-icono titulo="Carrito de compras" tag-icono="jz-sc"></card-icono>
+        <card-icono titulo="Ubicación" tag-icono="jz-lc"></card-icono>
+        <card-icono titulo="Usuario" tag-icono="jz-us"></card-icono>
+        <card-icono titulo="Usuario nuevo" tag-icono="jz-usn"></card-icono>
+        <card-icono titulo="Ajustes" tag-icono="jz-stt"></card-icono>
+        <card-icono titulo="Compartir" tag-icono="jz-shr"></card-icono>
+        <card-icono titulo="Casa" tag-icono="jz-hm"></card-icono>
+        <card-icono titulo="Estrella" tag-icono="jz-str"></card-icono>
+        <card-icono titulo="Peligro" tag-icono="jz-wng"></card-icono>
+        <card-icono titulo="Mensaje" tag-icono="jz-sms"></card-icono>
+        <card-icono titulo="Cámara" tag-icono="jz-cam"></card-icono>
+        <card-icono titulo="Más" tag-icono="jz-plus"></card-icono>
+        <card-icono titulo="Menos" tag-icono="jz-minus"></card-icono>
+        <card-icono titulo="Descarga completa" tag-icono="jz-dwl-c"></card-icono>
+        <card-icono titulo="Pausa" tag-icono="jz-pause"></card-icono>
+        <card-icono titulo="Play" tag-icono="jz-play"></card-icono>
+        <card-icono titulo="Información" tag-icono="jz-info"></card-icono>
+        <card-icono titulo="Doble check" tag-icono="jz-dbl-ck"></card-icono>
+        <card-icono titulo="Copiar" tag-icono="jz-copy"></card-icono>
+        <card-icono titulo="Portapapeles" tag-icono="jz-clipboard"></card-icono>
+        <card-icono titulo="Previo" tag-icono="jz-prev"></card-icono>
+        <card-icono titulo="Siguiente" tag-icono="jz-next"></card-icono>
+        <card-icono titulo="Descargar" tag-icono="jz-dwl"></card-icono>
+        <card-icono titulo="Lápiz" tag-icono="jz-pcl"></card-icono>
+        <card-icono titulo="Tachuela" tag-icono="jz-tack"></card-icono>
+        <card-icono titulo="Papelera" tag-icono="jz-ppb"></card-icono>
+        <card-icono titulo="Corazón" tag-icono="jz-heart"></card-icono>
+        <card-icono titulo="Shell" tag-icono="jz-sh"></card-icono>
+        <card-icono titulo="Github" tag-icono="jz-github"></card-icono>
+        <card-icono titulo="Git" tag-icono="jz-git"></card-icono>
+        <card-icono titulo="HTML" tag-icono="jz-html"></card-icono>
+        <card-icono titulo="CSS" tag-icono="jz-css"></card-icono>
+        <card-icono titulo="Javascript" tag-icono="jz-js"></card-icono>
+        <card-icono titulo="Markdown" tag-icono="jz-md"></card-icono>
+        <card-icono titulo="Texto" tag-icono="jz-txt"></card-icono>
+        <card-icono titulo="Correo" tag-icono="jz-email"></card-icono>
+      </section>      
+      
+    </main>
+    
+  </div>
+  
+</body>
+</html>

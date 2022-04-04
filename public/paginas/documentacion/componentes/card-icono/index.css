@@ -1,0 +1,88 @@
+card-icono {
+  font-size: 1rem;
+  
+  width: 100%;
+  padding: 2em;
+  margin-bottom: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0.5em;
+  background-color: #AAA;
+}
+
+card-icono:last-child {
+  margin-bottom: 2em;
+}
+
+.card__titulo {
+  font-size: 2.4em;
+  
+  width: 100%;
+  margin: 0;
+  margin-bottom: 1.4em;
+  text-align: center;
+  font-style: italic;
+}
+
+.card__iconoCopiar {
+  --size-iconejz: 4em;
+  --color-iconejz: #FFF;
+  --padding-iconejz: 0.2em;
+  --border-radius-iconejz: 50%;
+  --background-iconejz: rgba(0, 0, 0, 0.1);
+  
+  margin-left: 0.5em;
+  transform: translateY(-0.25em);
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  transition: background-color 0.25s linear; 
+}
+
+.card__iconoCopiar:hover {
+  --color-iconejz: rgba(0, 0, 0, 0.5);
+  --background-iconejz: rgba(255, 255, 255, 0.5);
+}
+
+.card__contenido {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.card__subtitulo {
+  font-size: 1.872em;
+  
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.card__codigo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card__ejemplo > div {
+  font-size: 1.68em;
+}
+
+.card__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  user-select: none;
+}
+
+.card__iconoResultado {
+  --size-iconejz: 5em;
+}
