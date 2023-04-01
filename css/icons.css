@@ -1,0 +1,82 @@
+html-example::part(html-example__content) {
+  width: 10em;
+}
+
+.header {
+  color: var(--text-color);
+  margin: 1.6em 0 1em;
+}
+
+.header__title {
+  margin-bottom: 1em;
+}
+
+.header__title--animation {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  -webkit-text-stroke: 0.05em #B0B0B0;
+  color: transparent;
+  font-family: monospace;
+}
+
+.header__title--animation::after {
+  content: "icon";
+  width: 20%;
+  color: var(--text-color);
+  display: inline-block;
+  border-right: 0.1em solid var(--text-color);
+  position: absolute;
+  overflow: hidden;
+  -webkit-text-stroke: 0em;
+  animation: 2s content linear infinite alternate,
+             1s blink linear infinite alternate;
+}
+
+.not-found-message {
+  font-size: 2em;
+
+  color: var(--text-color);
+  width: 100%;
+  font-weight: bold;
+  font-style: italic;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* Animations */
+
+@keyframes content {
+  from { 
+    width: 0%;
+  }
+
+  to { 
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from { 
+    border-right-color: var(--text-color); 
+  }
+
+  to { 
+    border-right-color: transparent; 
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: 0.8em;
+  }
+
+  internal-seeker {
+    --font-size: 0.8rem;
+  }
+
+  icon-card {
+    --font-size: 0.95rem;
+  }
+}

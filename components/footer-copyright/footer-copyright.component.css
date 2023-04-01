@@ -1,0 +1,26 @@
+footer-copyright {
+  width: 100%;
+  margin: 0;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: monospace;
+  background-color: #AAAAAA;
+}
+
+.container--dark-theme footer-copyright {
+  background-color: #252525;
+}
+
+.container--dark-theme ::part(footer-copyright__link) {
+  color: #00f666;
+}
+
+::part(footer-copyright__link) {
+  color: var(--purple-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+::part(footer-copyright__link):hover {
+  font-style: italic;
+}

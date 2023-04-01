@@ -1,0 +1,87 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap'); */
+
+:root {
+  --black-color: #000000;
+  --white-color: #E3E3E3;
+  --purple-color: #5B25A9;
+  --green-color: #225936;
+  scroll-behavior: smooth;
+}
+
+html { font-size: 0.625em }
+body { font-size: 1.6rem }
+
+* { box-sizing: border-box }
+
+.container {
+  --text-color: var(--black-color);
+  --background-color-container: #CACACA;
+
+  color: var(--text-color);
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  background-color: var(--background-color-container);
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container--dark-theme {
+  --text-color: var(--white-color);
+  --background-color-container: #404040;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+  padding: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.link {
+  color: var(--purple-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.link:visited {
+  color: var(--green-color);
+}
+
+.container--dark-theme .link {
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.35rem;
+  background-color: #111111;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 620px) {
+  .main {
+    padding: 1.5rem;
+  }
+}
