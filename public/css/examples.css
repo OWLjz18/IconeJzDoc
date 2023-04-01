@@ -1,0 +1,47 @@
+.container {
+  --iconejz-cursor: pointer;
+}
+
+.container--dark-theme .link:visited {
+  background-color: #222222;
+}
+
+.header__title {
+  margin: 4rem 0 2rem;
+  font-style: italic;
+}
+
+.main {
+  padding-top: 0;
+}
+
+.article {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.section {
+  width: 100%;
+  padding: 0 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.section:last-of-type {
+  margin-bottom: 0;
+}
+
+.section__title {
+  width: 100%;
+  margin-top: 0;
+}
+
+.section__paragraph {
+  margin: 1.5rem 0;
+  text-indent: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 0 0.75rem;
+  }
+}

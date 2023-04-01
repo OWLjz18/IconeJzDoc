@@ -1,0 +1,46 @@
+::part(jz-sun--content) {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+::part(jz-sun-c) {
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+  transform: translateY(0.05em);
+  background-color: var(--iconejz-c);
+}
+
+::part(jz-sun-r) {
+  width: 18%;
+  height: 18%;
+  position: absolute;
+  left: 10%;
+  background-color: var(--iconejz-c);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+  transform-origin: calc(var(--iconejz-s) / 2.5);
+  transform: rotate(calc(360deg / 8 * var(--id)));
+}
+
+::part(jz-moon--content) {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+::part(jz-moon-c) {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  clip-path: circle(48% at 50% 50%);
+  background-color: var(--iconejz-c);
+}
+
+::part(jz-moon-c2) {
+  width: 55%;
+  height: 55%;
+  position: absolute;
+  transform: translate(22.5%, -22.5%);
+  background-color: var(--iconejz-bg);
+}

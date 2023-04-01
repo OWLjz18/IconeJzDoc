@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icons</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="./../css/normalize.css">
+  <!-- IconeJz -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/iconejz@2.0.1/src/iconejz.css">
+  <script src="https://cdn.jsdelivr.net/npm/iconejz@2.0.1/src/iconejz.js" type="module"></script>
+  <!-- Components -->
+  <link rel="stylesheet" href="./../components/icon-card/icon-card.component.css">
+  <script src="./../components/icon-card/icon-card.component.js" type="module" async></script>
+  <link rel="stylesheet" href="./../components/internal-seeker/internal-seeker.component.css">
+  <script src="./../components/internal-seeker/internal-seeker.component.js" type="module"></script>
+  <link rel="stylesheet" href="../components/floating-menu/floating-menu.component.css">
+  <script src="./../components/floating-menu/floating-menu.component.js" defer></script>
+  <link rel="stylesheet" href="../components/footer-copyright/footer-copyright.component.css">
+  <script src="./../components/footer-copyright/footer-copyright.component.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/icons.css">
+  <!-- JS -->
+  <script src="./../js/icons.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <floating-menu></floating-menu>
+
+    <header class="header">
+      <h1 class="header__title">Search an <span class="header__title--animation">icon</span>:</h1>
+
+      <internal-seeker class="header__seeker" placeholder="css"></internal-seeker>
+    </header>
+
+    <main class="main">
+      <p class="not-found-message" hidden="true">Not Found :'(</p>
+    </main>
+
+    <footer-copyright></footer-copyright>
+  </div>
+</body>
+</html>

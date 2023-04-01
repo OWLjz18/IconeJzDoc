@@ -1,0 +1,41 @@
+.custom-alert {
+  color: #FFBE29;
+  margin: 0;
+  padding: 0.5rem 1.2rem 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  position: fixed;
+  bottom: 2.5%;
+  z-index: 6;
+  font-style: italic;
+  border-radius: 0.5rem;
+  background-color: #000000;
+  transform: scale(0);
+}
+
+.custom-alert__icon {
+  --iconejz-s: 3rem;
+  --iconejz-b: 0.2rem;
+  --iconejz-c: #FFBE29;
+}
+
+.custom-alert__text {
+  transform: translateY(-0.25rem);
+}
+
+/*
+  [ States ]
+*/
+.custom-alert--on,
+.custom-alert--off {
+  transition: transform 0.5s linear;
+}
+
+.custom-alert--on {
+  transform: scale(1);
+}
+
+.custom-alert--off {
+  transform: scale(0);
+}

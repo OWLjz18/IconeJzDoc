@@ -1,0 +1,67 @@
+floating-menu { 
+  --iconejz-s: 5em;
+  --iconejz-bd: 50%;
+  --iconejz-cursor: pointer;
+  --floating-menu-size: 20em;
+  --floating-menu-toggle-size: 6em;
+
+  --font-size: 1rem;
+  font-size: var(--font-size);
+  
+  width: min-content;
+  height: min-content;
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+::part(floating-menu) {
+  font-size: var(--font-size);
+  width: var(--floating-menu-size);
+  height: var(--floating-menu-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+::part(floating-menu__toggle) {
+  --iconejz-s: var(--floating-menu-toggle-size);
+  --iconejz-p: 0.5em;
+
+  box-shadow: 0 0 0.8em 0.4em var(--background-color-container);
+  position: absolute;
+  z-index: 5;
+}
+
+::part(floating-menu__item) {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  transform-origin: 10em;
+  transition: transform 0.5s linear calc(0.1s * var(--id)),
+              opacity 0.2s linear;
+  transform: rotate(0deg) translateX(8em);
+}
+
+::part(floating-menu__item--visible) {
+  opacity: 0.75;
+  transform: rotate(calc(360deg / 8 * var(--id)));
+}
+
+::part(floating-menu__item):hover {
+  --iconejz-c: #29FFAA;
+  opacity: 1;
+}
+
+::part(floating-menu__icon) {
+  transform: rotate(calc(360deg / -8 * var(--id)));
+}
+
+@media screen and (max-width: 1000px) {
+  floating-menu {
+  --font-size: 0.84rem;
+  }
+}

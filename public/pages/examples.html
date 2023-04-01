@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examples</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="./../css/normalize.css">
+  <!-- IconeJz -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/iconejz@2.0.1/src/iconejz.css">
+  <script src="https://cdn.jsdelivr.net/npm/iconejz@2.0.1/src/iconejz.js" type="module"></script>
+  <!-- Components -->
+  <link rel="stylesheet" href="../components/floating-menu/floating-menu.component.css">
+  <script src="./../components/floating-menu/floating-menu.component.js" defer></script>
+  <link rel="stylesheet" href="../components/html-example/html-example.component.css">
+  <script src="../components/html-example/html-example.component.js" type="module"></script>
+  <link rel="stylesheet" href="../components/js-example/js-example.component.css">
+  <script src="../components/js-example/js-example.component.js" type="module"></script>
+  <link rel="stylesheet" href="../components/footer-copyright/footer-copyright.component.css">
+  <script src="./../components/footer-copyright/footer-copyright.component.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/examples.css">
+  <!-- JS -->
+  <script src="../js/examples.js" defer></script>
+  <script src="../js/icons-examples.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <floating-menu></floating-menu>
+
+    <header class="header">
+      <h1 class="header__title">Welcome to usage examples!</h1>
+    </header>
+
+    <main class="main">
+      <article class="article">
+        <h2 class="article__title">Getters:</h2>
+        
+        <section class="section">
+          <h3 class="section__title">"contentName"</h3>
+
+          <p class="section__paragraph">This getter will return the name of the icon's content. Which is not the same as the value of its "is" attribute. Let's see an example:</p>
+          
+          <p class="section__paragraph">HTML:</p>
+          <html-example
+            tag="icone-jz"
+            attributes="is - class"
+            value-attributes="menu - icon"
+          ></html-example>
+
+          <p class="section__paragraph">Javascript:</p>
+          <js-example class="js-example"></js-example>
+
+          <p class="section__paragraph">As we can see the value of the "is" attribute is maintained, since methods like <a class="link" href="#changeContentFor">changeContentFor</a> only change its content.</p>
+        </section>
+      </article>
+
+      <article class="article">
+        <h2 class="article__title">Methods:</h2>
+        
+        <section class="section">
+          <h3 class="section__title" id="changeContentFor">changeContentFor</h3>
+
+          <p class="section__paragraph">With this method we can change the content of an icon, without altering its "is" attribute. Lets's see an example:</p>
+
+          <p class="section__paragraph">HTML:</p>
+          <html-example
+            tag="icone-jz"
+            attributes="is - class"
+            value-attributes="check - check"
+          ></html-example>
+
+          <p class="section__paragraph">Javascript:</p>
+          <js-example class="js-example"></js-example>
+
+          <p class="section__paragraph">Result:</p>
+          <icone-jz is="check" class="check-example"></icone-jz>
+        </section>
+        <section class="section">
+          <h3 class="section__title">undoChangeContent</h3>
+
+          <p class="section__paragraph">Thanks to this method, we can undo the last change that had an icon through the <a class="link" href="#changeContentFor">changeContentFor</a> method. Let's see an example, based on the previous one:</p>
+
+          <p class="section__paragraph">HTML:</p>
+          <html-example
+            tag="icone-jz"
+            attributes="is - class"
+            value-attributes="check - check-undo"
+          ></html-example>
+
+          <p class="section__paragraph">Javascript:</p>
+          <js-example class="js-example"></js-example>
+
+          <p class="section__paragraph">Result:</p>
+          <icone-jz is="check" class="check-undo-example"></icone-jz>
+        </section>
+        <section class="section">
+          <h3 class="section__title">toggleContent</h3>
+
+          <p class="section__paragraph">If we want the content of an icon to alternate between one and the other, this is the indicated method.</p>
+
+          <p class="section__paragraph">To give a practical example from real life, let's imagine that we need to make a music player. If this is the case, we would ensure that the playback icon alternates between "play" and "pause", and here the minimum code to make this is possible:</p>
+
+          <p class="section__paragraph">HTML:</p>
+          <html-example
+            tag="icone-jz"
+            attributes="is - class"
+            value-attributes="play - music"
+          ></html-example>
+
+          <p class="section__paragraph">Javascript:</p>
+          <js-example class="js-example"></js-example>
+
+          <p class="section__paragraph">Result:</p>
+          <icone-jz is="play" class="play-example"></icone-jz>
+        </section>
+      </article>
+    </main>
+
+    <footer-copyright></footer-copyright>
+  </div>
+</body>
+</html>

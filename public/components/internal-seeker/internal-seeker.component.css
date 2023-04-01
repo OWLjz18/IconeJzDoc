@@ -1,0 +1,43 @@
+internal-seeker {
+  --font-size: 1rem;
+
+  display: inline-block;
+}
+
+::part(internal-seeker__input) {
+  font-size: calc(var(--font-size) * 2);
+
+  color: var(--white-color);
+  padding: 0.38em 0.5em;
+  outline: none;
+  border-radius: 0.25em;
+  border: 0.2em solid var(--black-color);
+  background-color: #808080;
+  transition: border-color 0.2s linear;
+}
+
+::part(internal-seeker__input):focus {
+  border-color: var(--purple-color);
+}
+
+::part(internal-seeker__input)::placeholder {
+  color: var(--black-color);
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: italic;
+}
+
+.container--dark-theme ::part(internal-seeker__input) {
+  color: var(--white-color);
+  border-color: #999999;
+  background-color: #505050;
+}
+
+.container--dark-theme ::part(internal-seeker__input):focus {
+  border-color: #FFBE29;
+}
+
+.container--dark-theme ::part(internal-seeker__input)::placeholder {
+  color: var(--white-color);
+}

@@ -1,0 +1,36 @@
+js-example,
+.js-example {
+  color: #E3E3E3;
+  padding: 0.6em;
+  margin: 1rem 0.5rem;
+  display: flex;
+  background-color: #000;
+  border-radius: 0.35rem;
+  overflow: scroll;
+}
+
+::part(js-example__pre) {
+  margin: 0;
+}
+
+::part(js-example__keyword) {
+  color: deeppink;
+  font-weight: bold;
+}
+
+::part(js-example__function) {
+  color: greenyellow;
+}
+
+::part(js-example__reserved) {
+  color: deepskyblue;
+}
+
+::part(js-example__string) {
+  color: orange;
+}
+
+::part(js-example__comment) {
+  color: #606060;
+  font-style: italic;
+}
