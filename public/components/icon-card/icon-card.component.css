@@ -1,0 +1,42 @@
+@import url('./../html-example/html-example.component.css');
+
+icon-card {
+  --font-size: 1rem;
+  font-size: var(--font-size);
+  
+  width: 20em;
+  height: 20em;
+  padding: 1em;
+  margin: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0.5em;
+  background-color: #AAA;
+}
+
+.container--dark-theme icon-card {
+  color: var(--white-color);
+  background-color: #595959;
+}
+
+::part(html-example__content) {
+  width: 12em;
+}
+
+::part(card__title) {
+  font-size: calc(var(--font-size) * 2);
+  
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+}
+
+::part(card__example) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

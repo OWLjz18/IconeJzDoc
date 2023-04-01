@@ -1,0 +1,20 @@
+{
+  "name": "iconejzdoc",
+  "version": "1.0.0",
+  "description": "IconeJz website.",
+  "main": "",
+  "scripts": {
+    "docs": "jsdoc -c ./jsdoc.json",
+    "deploy": "gh-pages -d ./public/"
+  },
+  "keywords": [],
+  "author": "OWLjz18 <owl.jz18@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "docdash": "2.0.0",
+    "jsdoc": "4.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "5.0.0"
+  }
+}

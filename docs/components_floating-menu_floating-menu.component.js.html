@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>components/floating-menu/floating-menu.component.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module-components_floating-menu-FloatingMenu.html">FloatingMenu</a><ul class='methods'><li data-type='method'><a href="module-components_floating-menu-FloatingMenu.html#._changeTheme#_changeTheme">_changeTheme</a></li><li data-type='method'><a href="module-components_floating-menu-FloatingMenu.html#._dragAndDrop#_dragAndDrop">_dragAndDrop</a></li><li data-type='method'><a href="module-components_floating-menu-FloatingMenu.html#._openAndClose#_openAndClose">_openAndClose</a></li><li data-type='method'><a href="module-components_floating-menu-FloatingMenu.html#._render#_render">_render</a></li><li data-type='method'><a href="module-components_floating-menu-FloatingMenu.html#.connectedCallback#connectedCallback">connectedCallback</a></li></ul></li><li><a href="module-components_footer-copyright-FooterCopyright.html">FooterCopyright</a><ul class='methods'><li data-type='method'><a href="module-components_footer-copyright-FooterCopyright.html#._render#_render">_render</a></li><li data-type='method'><a href="module-components_footer-copyright-FooterCopyright.html#.connectedCallback#connectedCallback">connectedCallback</a></li></ul></li><li><a href="module-components_html-example-HTMLExample.html">HTMLExample</a><ul class='methods'><li data-type='method'><a href="module-components_html-example-HTMLExample.html#._readAttributes#_readAttributes">_readAttributes</a></li><li data-type='method'><a href="module-components_html-example-HTMLExample.html#._render#_render">_render</a></li><li data-type='method'><a href="module-components_html-example-HTMLExample.html#.connectedCallback#connectedCallback">connectedCallback</a></li><li data-type='method'><a href="module-components_html-example-HTMLExample.html#.observedAttributes">observedAttributes</a></li></ul></li><li><a href="module-components_icon-card-IconCard.html">IconCard</a><ul class='methods'><li data-type='method'><a href="module-components_icon-card-IconCard.html#._capitalize#_capitalize">_capitalize</a></li><li data-type='method'><a href="module-components_icon-card-IconCard.html#._render#_render">_render</a></li><li data-type='method'><a href="module-components_icon-card-IconCard.html#.connectedCallback#connectedCallback">connectedCallback</a></li><li data-type='method'><a href="module-components_icon-card-IconCard.html#.observedAttributes">observedAttributes</a></li></ul></li><li><a href="module-components_internal-seeker-InternalSeeker.html">InternalSeeker</a><ul class='methods'><li data-type='method'><a href="module-components_internal-seeker-InternalSeeker.html#._filterResults#_filterResults">_filterResults</a></li><li data-type='method'><a href="module-components_internal-seeker-InternalSeeker.html#._getInputValue#_getInputValue">_getInputValue</a></li><li data-type='method'><a href="module-components_internal-seeker-InternalSeeker.html#._render#_render">_render</a></li><li data-type='method'><a href="module-components_internal-seeker-InternalSeeker.html#.connectedCallback#connectedCallback">connectedCallback</a></li><li data-type='method'><a href="module-components_internal-seeker-InternalSeeker.html#.observedAttributes">observedAttributes</a></li></ul></li><li><a href="module-components_js-example-JSExample.html">JSExample</a><ul class='methods'><li data-type='method'><a href="module-components_js-example-JSExample.html#._getText#_getText">_getText</a></li><li data-type='method'><a href="module-components_js-example-JSExample.html#._render#_render">_render</a></li><li data-type='method'><a href="module-components_js-example-JSExample.html#._syntaxHighlighting#_syntaxHighlighting">_syntaxHighlighting</a></li><li data-type='method'><a href="module-components_js-example-JSExample.html#.connectedCallback#connectedCallback">connectedCallback</a></li><li data-type='method'><a href="module-components_js-example-JSExample.html#.setText#setText">setText</a></li></ul></li><li><a href="module-models_CodeExample-CodeExample.html">CodeExample</a><ul class='methods'><li data-type='method'><a href="module-models_CodeExample-CodeExample.html#._copyToClipboard#_copyToClipboard">_copyToClipboard</a></li><li data-type='method'><a href="module-models_CodeExample-CodeExample.html#._exportparts#_exportparts">_exportparts</a></li><li data-type='method'><a href="module-models_CodeExample-CodeExample.html#._getText#_getText">_getText</a></li><li data-type='method'><a href="module-models_CodeExample-CodeExample.html#.connectedCallback#connectedCallback">connectedCallback</a></li><li data-type='method'><a href="module-models_CodeExample-CodeExample.html#.observedAttributes">observedAttributes</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-components_floating-menu.html">components/floating-menu</a></li><li><a href="module-components_footer-copyright.html">components/footer-copyright</a></li><li><a href="module-components_html-example.html">components/html-example</a></li><li><a href="module-components_icon-card.html">components/icon-card</a></li><li><a href="module-components_internal-seeker.html">components/internal-seeker</a></li><li><a href="module-components_js-example.html">components/js-example</a></li><li><a href="module-js_custom-alert.html">js/custom-alert</a><ul class='methods'><li data-type='method'><a href="module-js_custom-alert.html#.customAlert#~customAlert">customAlert</a></li></ul></li><li><a href="module-models_CodeExample.html">models/CodeExample</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">components/floating-menu/floating-menu.component.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/** @module components/floating-menu */
+
+/**
+ * Create a dropdown menu.
+ * @extends HTMLElement
+ */
+const FloatingMenu = class extends HTMLElement {
+  /** 
+   * Enables the shadow DOM.
+   */
+  constructor () {
+    super();
+    
+    this._root = this.attachShadow({ mode: 'open' });
+  }
+  
+  /**
+   * Renders the menu content.
+   */
+  _render () {
+    const floatingMenu = document.createElement('div');
+    floatingMenu.setAttribute('part', 'floating-menu');
+
+    const menuIcon = document.createElement('icone-jz');
+    menuIcon.setAttribute('is', 'menu');
+    menuIcon.setAttribute('part', 'floating-menu__toggle');
+
+    floatingMenu.append(menuIcon);
+
+    const menuItemsData = [
+      {
+        is: 'moon--e',
+        title: 'Change Theme',
+      },
+      {
+        is: 'information',
+        title: 'Examples',
+        href: '/pages/examples.html',
+      },
+      {
+        is: 'heart',
+        title: 'Github Repository',
+        href: 'https://www.github.com/OWLjz18/IconeJz'
+      },
+      {
+        is: 'magnifying-glass',
+        title: 'Icons',
+        href: '/pages/icons.html'
+      },
+      {
+        is: 'home',
+        title: 'Home',
+        href: '/index.html'
+      },
+      {
+        is: 'instagram',
+        title: 'Author Instagram',
+        href: 'https://www.instagram.com/owljz18'
+      },
+      {
+        is: 'github',
+        title: 'Author Github',
+        href: 'https://www.github.com/OWLjz18'
+      },
+      {
+        is: 'email',
+        title: 'Author Email',
+        href: 'mailto:owl.jz18@gmail.com'
+      },
+    ];
+
+    menuItemsData.forEach((itemData, index) => {
+      const menuItem = document.createElement('li');
+      menuItem.setAttribute('part', 'floating-menu__item');
+      menuItem.setAttribute('title', itemData.title);
+      menuItem.style.setProperty('--id', index);
+
+      const icon = document.createElement('icone-jz');
+      icon.setAttribute('is', itemData.is);
+      icon.setAttribute('part', 'floating-menu__icon')
+
+      if (itemData.is === 'moon--e') {
+        icon.setAttribute('class', 'floating-menu__theme-icon');
+      }
+
+      if (!itemData.href) {
+        menuItem.append(icon);
+        floatingMenu.append(menuItem);
+        return;
+      }
+
+      const itemLink = document.createElement('a');
+      itemLink.setAttribute('part', 'floating-menu__link')
+      itemLink.href = itemData.href;
+
+      itemLink.append(icon);
+      menuItem.append(itemLink);
+      floatingMenu.append(menuItem);
+    });
+
+    this._root.append(floatingMenu);
+  }
+  
+  /**
+   * Makes the menu openable and closeable.
+   */
+  _openAndClose () {
+    const menu = this._root.querySelector('[part="floating-menu"]');
+    const iconMenu = this._root.querySelector('[part="floating-menu__toggle"]');
+    const items = this._root.querySelectorAll('[part="floating-menu__item"]');
+    
+    iconMenu.addEventListener('click', (event) => {
+      if (this._isTheMenuRecentlyMoved) {
+        return;
+      }
+
+      this.classList.toggle('open');
+      iconMenu.toggleContent('x');
+
+      (this.classList.contains('open'))
+        ? items.forEach(item => item.setAttribute('part', 'floating-menu__item floating-menu__item--visible'))
+        : items.forEach(item => item.setAttribute('part', 'floating-menu__item'))
+    });
+  } 
+
+  /** 
+   * Allows you to change the theme of the page.
+   */
+  async _changeTheme () {
+    const storage = window.localStorage;
+    const container = document.querySelector('.container');
+    const themeIcon = this._root.querySelector('.floating-menu__theme-icon');
+    const preferenceColor = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const setDarkTheme = async () => {
+      await themeIcon.changeContentFor('sun--e', { asyncMode: true });
+      container.classList.add('container--dark-theme');
+      storage.setItem('IconeJzTheme', 'dark');
+    };
+
+    const setLightTheme = async () => {
+      await themeIcon.changeContentFor('moon--e', { asyncMode: true });
+      container.classList.remove('container--dark-theme');
+      storage.setItem('IconeJzTheme', 'light');
+    };
+
+    if (storage.getItem('IconeJzTheme') === 'dark') {
+      setDarkTheme();
+    }
+
+    themeIcon.addEventListener('click', async () => {
+      (themeIcon.contentName === 'moon--e')
+        ? setDarkTheme()
+        : setLightTheme();
+    });
+
+    preferenceColor.addEventListener('change', (event) => {
+      const isDarkTheme = event.matches;
+
+      (isDarkTheme)
+        ? setDarkTheme()
+        : setLightTheme();
+    });
+  }
+  
+  /**
+   * Allows you to drag and drop the menu.
+   */
+  _dragAndDrop () {
+    this._isMenuPressed = false;
+    const menu = this._root.querySelector('[part="floating-menu"]');
+    const iconMenu = this._root.querySelector('[part="floating-menu__toggle"]');
+
+    const menuSize = parseFloat(getComputedStyle(menu).width);
+    const iconSize = parseFloat(getComputedStyle(iconMenu).width);
+    const spaceBetweenMenuAndIcon = (menuSize - iconSize) / 2;
+
+    const minLimitOfTheCoordX = spaceBetweenMenuAndIcon - (iconSize / 4);
+    const maxLimitOfTheCoordX = innerWidth - minLimitOfTheCoordX;
+    const minLimitOfTheCoordY = spaceBetweenMenuAndIcon - (iconSize / 4);
+    const maxLimitOfTheCoordY = innerHeight - minLimitOfTheCoordY;
+
+    const moveMenu = (clientX, clientY) => {
+      if (this._isMenuPressed) {
+        const coordX = clientX;
+        const coordY = clientY;
+
+        if (
+          (coordX >= minLimitOfTheCoordX &amp;&amp; coordX &lt;= maxLimitOfTheCoordX)
+          &amp;&amp; (coordY >= minLimitOfTheCoordY &amp;&amp; coordY &lt;= maxLimitOfTheCoordY)
+        ) {
+          this.style.left = `${(coordX - spaceBetweenMenuAndIcon) - (iconSize / 2)}px`;
+          this.style.top = `${(coordY - spaceBetweenMenuAndIcon) - (iconSize / 2)}px`;
+
+          this._isTheMenuRecentlyMoved = true;
+        }
+      }
+    };
+
+    iconMenu.addEventListener('mousedown', () => this._isMenuPressed = true);
+    iconMenu.addEventListener('touchstart', () => this._isMenuPressed = true);
+
+    iconMenu.addEventListener('mouseup', () => {
+      this._isMenuPressed = false
+      setTimeout(() => this._isTheMenuRecentlyMoved = false);
+    });
+    iconMenu.addEventListener('touchend', () => {
+      this._isMenuPressed = false
+      setTimeout(() => this._isTheMenuRecentlyMoved = false);
+    });
+
+    iconMenu.addEventListener('mousemove', ({ clientX, clientY }) => moveMenu(clientX, clientY));
+    iconMenu.addEventListener('touchmove', (event) => {
+      const { clientX, clientY } = event.touches[0];
+
+      event.preventDefault();
+      moveMenu(clientX, clientY);
+    });
+  }
+
+  /** 
+   * It is executed when connecting the element to the document.
+   */
+  connectedCallback () {
+    this._render();
+    this._openAndClose();
+    this._changeTheme();
+    this._dragAndDrop();
+  }
+};
+
+customElements.define('floating-menu', FloatingMenu);
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Sat Apr 01 2023 17:47:41 GMT-0400 (Venezuela Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

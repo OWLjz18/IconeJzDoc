@@ -1,0 +1,51 @@
+@import url('./../../css/custom-alert.css');
+
+html-example {
+  --font-size: 1rem;
+  font-size: var(--font-size);
+  
+  margin: 0.5rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+::part(html-example__content) {
+  font-size: calc(var(--font-size) * 1.4);
+  box-sizing: border-box;
+  
+  color: #F3F3F3;
+  padding: 0.5em 0.8em;
+  display: inline-block;
+  overflow: scroll;
+  white-space: nowrap;
+  border-radius: 0.25em;
+  background-color: var(--black-color);
+}
+
+::part(html-example__tag) {
+  color: #AE3FFD;
+}
+
+::part(html-example__attribute) {
+  color: #FFBE29;
+}
+
+::part(html-example__value-attribute) {
+  color: #29FFAA;
+}
+
+::part(html-example__text) {
+  color: #A5A5A5;
+}
+
+/* ::Selection */
+::part(html-example__content)::selection,
+::part(html-example__tag)::selection,
+::part(html-example__attribute)::selection,
+::part(html-example__value-attribute)::selection,
+::part(html-example__text)::selection {
+  color: #00C7FF;
+  background-color: #999;
+}
