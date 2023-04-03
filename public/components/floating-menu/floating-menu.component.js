@@ -35,7 +35,7 @@ const FloatingMenu = class extends HTMLElement {
       {
         is: 'information',
         title: 'Examples',
-        href: '/pages/examples.html',
+        href: './examples.html',
       },
       {
         is: 'heart',
@@ -45,12 +45,12 @@ const FloatingMenu = class extends HTMLElement {
       {
         is: 'magnifying-glass',
         title: 'Icons',
-        href: '/pages/icons.html'
+        href: './icons.html'
       },
       {
         is: 'home',
         title: 'Home',
-        href: '/index.html'
+        href: '../index.html'
       },
       {
         is: 'instagram',
