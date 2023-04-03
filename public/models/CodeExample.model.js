@@ -2,7 +2,7 @@
  * @module models/CodeExample
  * @requires module:js/custom-alert
  */
-import customAlert from '/js/custom-alert.js';
+import customAlert from '../js/custom-alert.js';
 
 /**
  * It contains the "basic" functions of an example, how it could be to copy the text to the clipboard.
