@@ -7,4 +7,4 @@ import('https://cdn.jsdelivr.net/npm/iconejz@2.0.1/src/data/version.data.js')
     const version = module.default;
     versionElement.innerText = version;
   })
-  .catch((err) => alert(err));
+  .catch((err) => {});
